@@ -1,0 +1,9 @@
+# IDA
+*.ida0
+*.ida1
+*.ida2
+*.nam
+*.til
+
+# Python
+*.pyc
