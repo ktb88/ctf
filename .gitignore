@@ -1,7 +1,7 @@
 # IDA
-*.ida0
-*.ida1
-*.ida2
+*.id0
+*.id1
+*.id2
 *.nam
 *.til
 
