@@ -1,2 +1,3 @@
-# ctf
-repo for ctf
+# CTF activities by @hackability
+
+:P
