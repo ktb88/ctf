@@ -17,3 +17,7 @@ peda-session-*
 
 # core
 core
+
+# mac
+DS_Store
+.DS_Store
