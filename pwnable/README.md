@@ -3,7 +3,7 @@
 1. 2017 Meepwn anotherarena
   - not working yet
 2. 2017 HUST RR2L
-  - solved but not working yey
+  - solved but not working yet
 3. 2017 HUST wind
   - solved but not working yet
 4. 2017 0ctf babyheap
@@ -15,4 +15,3 @@
   - i386 application running on debian
   - FSB
   - printf malloc, free condition (width)
-
