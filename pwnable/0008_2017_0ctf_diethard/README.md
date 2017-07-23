@@ -34,8 +34,8 @@ struct Message_Large {
 그런데 한참 시도 하던 도중 다음과 같은 덤프를 보았습니다.
 
 ```python
-fn_addMsg(0x20, "A")
-fn_addMsg(0x20, "B")
+fn_addMsg(0x400, "A")
+fn_addMsg(0x400, "B")
 fn_addMsg(2016, "C"*8)
 ```
 
