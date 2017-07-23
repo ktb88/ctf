@@ -20,3 +20,9 @@
   - x86-64 | FULL RELO | NX
   - heap (fast bin)
   - logic bug to leak the libc address
+
+* [x] 2016 openCTF tyro_heap
+  - Reverence
+  - i386 | NX
+  - heap buffer overflow
+  - overwrite function pointer
