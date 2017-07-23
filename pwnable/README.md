@@ -22,7 +22,7 @@
   - logic bug to leak the libc address
 
 * [x] 2016 openCTF tyro_heap
-  - Reverence
+  - https://github.com/ktb88/ctf/tree/master/pwnable/0007_2016_openCTF_tyroheap
   - i386 | NX
   - heap buffer overflow
   - overwrite function pointer
