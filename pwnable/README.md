@@ -26,6 +26,6 @@
   - heap buffer overflow
   - overwrite function pointer
 * [x] 2017 0ctf diethard
-  - asdf
+  - https://github.com/ktb88/ctf/tree/master/pwnable/0008_2017_0ctf_diethard
   - x86-64 | NX
   - custom heap (?)
