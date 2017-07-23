@@ -20,9 +20,12 @@
   - x86-64 | FULL RELO | NX
   - heap (fast bin)
   - logic bug to leak the libc address
-
 * [x] 2016 openCTF tyro_heap
   - https://github.com/ktb88/ctf/tree/master/pwnable/0007_2016_openCTF_tyroheap
   - i386 | NX
   - heap buffer overflow
   - overwrite function pointer
+* [x] 2017 0ctf diethard
+  - asdf
+  - x86-64 | NX
+  - custom heap (?)
