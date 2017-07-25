@@ -29,3 +29,7 @@
   - https://github.com/ktb88/ctf/tree/master/pwnable/0008_2017_0ctf_diethard
   - x86-64 | NX
   - custom heap (?)
+* [x] 2016 bctf bcloud
+  - i386 | NX
+  - heap (House of force)
+  - leak by got overwritten 
