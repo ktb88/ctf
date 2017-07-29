@@ -65,6 +65,8 @@ encode_mc = {
         ' ': ' ',               '_': '..--.-',
 }
 
+
+print "[step 5] decode morse code"
 msg5 = ""
 decode_mc = dict((v, k) for (k, v) in encode_mc.items())
 msg5 = ''.join(decode_mc[dec] for dec in msg4.split(" "))
