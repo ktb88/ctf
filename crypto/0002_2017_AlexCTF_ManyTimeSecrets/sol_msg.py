@@ -17,6 +17,7 @@ def get_char(ct, idx, offset, g_char):
 	return chr(ord(ct[idx][offset]) ^ ord(g_char))
 
 def show_res(ct, key):
+	print "KEY: {}".format(key + "_" * (len(ct[0]) - len(key)))
 	print "%4s 01234567890123456789012345" % (" ")
 	for i in range(0, len(ct)):
 		print "[%02d] %s" % (i, sxor(ct[i], key))
@@ -25,16 +26,17 @@ def show_res(ct, key):
 ct = None
 with open("msg") as fd:
 	ct = fd.read().split("\n")[:-1]
-print ct
 
 for i in range(0, len(ct)):
 	ct[i] = ct[i].decode("hex")
 
-g_k = "ALEXCTF{HER"
+g_k = "ALEXCTF{"
 show_res(ct, g_k)
 
 g_p = "Dear Friend"
-show_res(ct, g_p)
+print "Plain text : " + g_p
+g_k = sxor(ct[0], g_p).split("_")[0]
+print "Key        : " + g_k
 
 guess = [
 	(1, 11, "y"),
