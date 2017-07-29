@@ -17,3 +17,4 @@
 ## Crypto
 
 * [x] 2017 AlexCTF Ultracoded
+* [x] 2017 AlexCTF ManyTimeSecrets
