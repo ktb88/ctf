@@ -57,8 +57,9 @@ guess = [
 ]
 
 for idx, off, ch in guess:
+	print "GUESSING : '{}' -> '{}'".format(sxor(ct[idx], g_k), sxor(ct[idx], g_k).split("_")[0] + ch)
 	g_k += get_char(ct, idx, off, ch)
-	print "KEY : " + g_k
+	print "KEY IS : '{}'\n".format(g_k)
 
 print
 show_res(ct, g_k)
