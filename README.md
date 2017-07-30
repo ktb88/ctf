@@ -2,8 +2,11 @@
 
 :P
 
-## Pwnable
+## Crypto
+* [x] 2017 AlexCTF Ultracoded
+* [x] 2017 AlexCTF ManyTimeSecrets
 
+## Pwnable
 * [ ] 2017 Meepwn anotherarena
 * [ ] 2017 HUST RR2L
 * [ ] 2017 HUST wind
@@ -14,7 +17,8 @@
 * [x] 2017 0ctf diethard
 * [x] 2016 bctf bcloud
 
-## Crypto
-
-* [x] 2017 AlexCTF Ultracoded
-* [x] 2017 AlexCTF ManyTimeSecrets
+## Web
+* [x] 2017 h3x0r misulgwan
+* [x] 2017 h3x0r LFI
+* [x] 2017 h3x0r Column Test
+* [x] 2017 h3x0r File With PHP

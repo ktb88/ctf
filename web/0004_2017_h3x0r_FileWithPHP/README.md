@@ -5,6 +5,7 @@
 - $\_SESSION, $\_COOKIE
 - (php) preg_match
 - (php) unlink
+- (php) NULL == "" (empty-string not \x00)
 
 ## Solution
 
