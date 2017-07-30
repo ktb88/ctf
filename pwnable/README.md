@@ -32,4 +32,10 @@
 * [x] 2016 bctf bcloud
   - i386 | NX
   - heap (House of force)
-  - leak by got overwritten 
+  - leak by got overwritten
+* [ ] 2017 RCTF aiRcraft
+  - not working yet
+* [x] 2017 h3x0r mic for pwn
+  - i386 | NX | SSP
+  - Format String Bug (FSB)
+  - Leak memory by SSP
