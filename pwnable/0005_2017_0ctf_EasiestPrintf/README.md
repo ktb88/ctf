@@ -1,1 +1,1 @@
-# 2017_0ctf_pwnable_EasiestPrintf
+# 2017 0ctf - [PWN] EasiestPrintf

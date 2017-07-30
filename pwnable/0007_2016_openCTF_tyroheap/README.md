@@ -1,4 +1,4 @@
-# 2016_openCTF_tyro_heap
+# 2016 openCTF - [PWN] tyro_heap
 
 ## Key words
 

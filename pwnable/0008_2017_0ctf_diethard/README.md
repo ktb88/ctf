@@ -1,4 +1,4 @@
-# 2017_0ctf_diethard
+# 2017 0ctf - [PWN] diethard
 
 ## Key words
 

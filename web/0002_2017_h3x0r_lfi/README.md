@@ -1,4 +1,4 @@
-# 2017 h3x0r WEB - LFI
+# 2017 h3x0r - [WEB] LFI
 
 ## Key words
 

@@ -1,4 +1,4 @@
-# 2017 AlexCTF Crypto ManyTimeSecrets
+# 2017 AlexCTF - [CRYPTO] ManyTimeSecrets
 
 ## Key words
 

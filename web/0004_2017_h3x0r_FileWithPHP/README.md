@@ -1,4 +1,4 @@
-# 2017 h3x0r WEB - File with PHP
+# 2017 h3x0r - [WEB] File with PHP
 
 ## Key words
 

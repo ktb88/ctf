@@ -1,4 +1,4 @@
-# 2017 h3x0r PWN - Mic for pwn
+# 2017 h3x0r - [PWN] Mic for pwn
 
 ## Key words
 
