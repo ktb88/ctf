@@ -16,7 +16,7 @@
 * [x] 2016 openCTF tyro_heap
 * [x] 2017 0ctf diethard
 * [x] 2016 bctf bcloud
-* [ ] 2017 RCTF aiRcraft
+* [x] 2017 RCTF aiRcraft
 * [x] 2017 h3x0r mic for pwn
 
 ## Web

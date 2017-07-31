@@ -33,8 +33,13 @@
   - i386 | NX
   - heap (House of force)
   - leak by got overwritten
-* [ ] 2017 RCTF aiRcraft
-  - not working yet
+* [x] 2017 RCTF aiRcraft
+  - https://github.com/ktb88/ctf/tree/master/pwnable/0010_2017_RCTF_aiRcraft
+  - amd64 | NX | PIE | Partial Relro
+  - Heap Exploit
+  - double-free
+  - use-after-free
+  - overwritten function ptr
 * [x] 2017 h3x0r mic for pwn
   - i386 | NX | SSP
   - Format String Bug (FSB)
