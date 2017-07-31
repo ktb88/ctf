@@ -30,6 +30,7 @@
   - x86-64 | NX
   - custom heap (?)
 * [x] 2016 bctf bcloud
+  - https://github.com/ktb88/ctf/tree/master/pwnable/0009_2017_bctf_bcloud
   - i386 | NX
   - heap (House of force)
   - leak by got overwritten
@@ -41,6 +42,7 @@
   - use-after-free
   - overwritten function ptr
 * [x] 2017 h3x0r mic for pwn
+  - https://github.com/ktb88/ctf/tree/master/pwnable/0010_2017_h3x0r_MicForPwn
   - i386 | NX | SSP
   - Format String Bug (FSB)
   - Leak memory by SSP
