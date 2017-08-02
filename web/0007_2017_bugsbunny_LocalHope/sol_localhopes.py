@@ -1,5 +1,4 @@
 import requests
-import logging
 from socket import *
 
 # SOCK SETTING
