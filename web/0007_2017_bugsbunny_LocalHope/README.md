@@ -3,7 +3,7 @@
 ## Key words
 
 - CSRF (intended vulnerability)
-- Content-Security-Policy
+- Content-Security-Policy (CSP)
 - decimal IP dot string to decial IP string
 
 ## Solution
