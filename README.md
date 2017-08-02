@@ -30,6 +30,8 @@
 * [x] 2017 h3x0r LFI
 * [x] 2017 h3x0r Column Test
 * [x] 2017 h3x0r File With PHP
+* [X] 2017 BugsBunny Simple PHP
+* [X] 2017 BugsBunny LQI_X
 
 ## Forensic
 * [x] 2017 h3x0r Android Forensic

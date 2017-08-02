@@ -19,3 +19,12 @@
   - (php) preg_match
   - (php) unlink
   - (php) NULL == "" (empty-string not \x00)
+* [x] 2017 BugsBunny Simple PHP
+  - https://github.com/ktb88/ctf/tree/master/web/0005_2017_bugsbunny_SimplePHP
+  - reference variable
+  - variable's variable
+* [x] 2017 BugsBunny LQI_X
+  - https://github.com/ktb88/ctf/tree/master/web/0006_2017_bugsbunny_LQI_X
+  - SQLi
+  - guessing
+  - limit
