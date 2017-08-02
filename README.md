@@ -18,6 +18,12 @@
 * [x] 2016 bctf bcloud
 * [x] 2017 RCTF aiRcraft
 * [x] 2017 h3x0r mic for pwn
+* [X] 2017 bugsbunny Pwn50
+* [X] 2017 bugsbunny Pwn100
+* [X] 2017 bugsbunny Pwn150
+* [X] 2017 bugsbunny Pwn200
+* [X] 2017 bugsbunny Pwn250
+* [ ] 2017 bugsbunny Pwn300
 
 ## Web
 * [x] 2017 h3x0r misulgwan

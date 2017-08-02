@@ -3,7 +3,7 @@
 ## Key words
 
 - x86_64 simple stack bof
-- gdb : set follow-fork-mode [child|parent]
+- gdb : set follow-fork-mode [child | parent]
 
 ## Check Security
 
