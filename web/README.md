@@ -28,3 +28,13 @@
   - SQLi
   - guessing
   - limit
+* [x] 2017 BugsBunny Local Hope
+  - https://github.com/ktb88/ctf/tree/master/web/0007_2017_bugsbunny_LocalHope
+  - CSRF (intended vulnerability)
+  - Content-Security-Policy (CSP)
+  - decimal IP dot string to decial IP string
+* [x] 2017 BugsBunny Walk walk
+  - https://github.com/ktb88/ctf/tree/master/web/0008_2017_bugsbunny_walkwalk
+  - Cloud Web Service
+  - AWS S3 bucket
+  - robots.txt
