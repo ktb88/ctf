@@ -5,7 +5,7 @@
 - ELF Reversing
 - SMT Solver
 
-## solution
+## Solution
 
 문제를 보면 다음과 같습니다.
 

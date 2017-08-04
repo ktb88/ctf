@@ -120,4 +120,9 @@ strings rev75 | grep '^[a-zA-Z0-9+\/=]\{12\}$' | head -n -4 | base64 -d > flag.p
 ## Result
 
 > Bugs_Bunny{Th1s_t0t4lly_Th3_fl4g}
+
 ![](./flag.png)
+
+잘 안나와서 따로 캡처 한 모습은 다음과 같습니다.
+
+![](./flag_captured.png)
