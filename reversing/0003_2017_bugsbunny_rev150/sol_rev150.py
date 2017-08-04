@@ -8,7 +8,7 @@ for i in xrange(20):
 	s.add(a[i] >= 0)
 	s.add(a[i] <= 9)
 
-s.add(a[11] == 0)
+s.add(a[11] == 0) # added
 s.add(a[15] + a[4] == 10)
 s.add(a[1] * a[18] == 2)
 s.add(a[15] / a[9] == 1)
