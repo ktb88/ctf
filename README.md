@@ -32,6 +32,15 @@
 * [x] 2017 h3x0r File With PHP
 * [X] 2017 BugsBunny Simple PHP
 * [X] 2017 BugsBunny LQI_X
+* [X] 2017 BugsBunny Local Hope 
+* [X] 2017 BugsBunny Walk walk
 
 ## Forensic
 * [x] 2017 h3x0r Android Forensic
+
+## Reversing
+* [x] 2017 BugsBunny Rev50
+* [x] 2017 BugsBunny Rev100
+* [x] 2017 BugsBunny Rev150
+* [x] 2017 BugsBunny Rev400
+* [x] 2017 BugsBunny Rev75
