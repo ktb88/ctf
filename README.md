@@ -5,6 +5,13 @@
 ## Crypto
 * [x] 2017 AlexCTF Ultracoded
 * [x] 2017 AlexCTF ManyTimeSecrets
+* [x] 2017 BugsBunny Crypto-15
+* [x] 2017 BugsBunny Crypto-20
+* [x] 2017 BugsBunny Crypto-25
+* [x] 2017 BugsBunny Scy way
+* [x] 2017 BugsBunny Crypto-50
+* [x] 2017 BugsBunny BabyRSA
+* [x] 2017 BugsBunny RSA2
 
 ## Pwnable
 * [ ] 2017 Meepwn anotherarena

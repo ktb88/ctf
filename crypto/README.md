@@ -10,3 +10,23 @@
   - One-time pad vulnerability
   - crib dragging attack
   - guessing words
+* [x] 2017 BugsBunny Crypto-15
+  - Classic Cipher
+  - Cesar 
+  - Rot12, Rot13
+* [x] 2017 BugsBunny Crypto-20
+  - BrainFuck Language
+* [x] 2017 BugsBunny Crypto-25
+  - Ook Language
+* [x] 2017 BugsBunny Scy way
+  - Classic Cipher
+  - Scytale
+* [x] 2017 BugsBunny Crypto-50
+  - Base64
+* [x] 2017 BugsBunny BabyRSA
+  - RSA
+  - Small N
+* [x] 2017 BugsBunny RSA2
+  - RSA
+  - Big modular number
+  - Wiener attack
