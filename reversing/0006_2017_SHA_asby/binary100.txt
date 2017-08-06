@@ -1,0 +1,26 @@
+LFKMQ
+khino
+
+0 1a
+1 1b
+2 18
+3 19
+4 1e
+5 1f
+6 1c
+7 1d
+8 12
+9 13
+
+{}
+QW
+
+abcdefghijklmnopqrstuvwxyz
+KHINOLMBC@AFGDEZ[XY^_\]RSP
+
+flag{024baa8ac03ef22fdde61c0f11069f2f}
+
+abcdefghijklmnopqrstuvwxyz
+GHIJKLMNOPQRSTUVWXYZABCDEF
+
+fzehk
