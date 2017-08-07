@@ -12,7 +12,7 @@
   - guessing words
 * [x] 2017 BugsBunny Crypto-15
   - Classic Cipher
-  - Cesar 
+  - Cesar
   - Rot12, Rot13
 * [x] 2017 BugsBunny Crypto-20
   - BrainFuck Language
@@ -30,3 +30,6 @@
   - RSA
   - Big modular number
   - Wiener attack
+* [x] 2017 SHA Stack Overflow
+  - AES-CTR
+  - Python Lambda as counter
