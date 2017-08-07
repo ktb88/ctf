@@ -19,3 +19,6 @@
 * [x] 2017 BugsBunny Rev75
   - https://github.com/ktb88/ctf/tree/master/reversing/0001_2017_bugsbunny_rev75
   - Linux commands : strings, grep, head, base64
+* [x] 2017 SHA asby
+  - https://github.com/ktb88/ctf/tree/master/reversing/0001_2017_SHA_asby
+  - PE Reversing 
