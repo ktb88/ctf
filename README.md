@@ -12,6 +12,7 @@
 * [x] 2017 BugsBunny Crypto-50
 * [x] 2017 BugsBunny BabyRSA
 * [x] 2017 BugsBunny RSA2
+* [x] 2017 SHA Stack Overflow
 
 ## Pwnable
 * [ ] 2017 Meepwn anotherarena
@@ -39,11 +40,18 @@
 * [x] 2017 h3x0r File With PHP
 * [X] 2017 BugsBunny Simple PHP
 * [X] 2017 BugsBunny LQI_X
-* [X] 2017 BugsBunny Local Hope 
+* [X] 2017 BugsBunny Local Hope
 * [X] 2017 BugsBunny Walk walk
+* [x] 2017 SHA Bon Appetit
 
 ## Forensic
 * [x] 2017 h3x0r Android Forensic
+* [x] 2017 SHA Compromised?
+* [ ] 2017 SHA Wanna Fly
+
+## Network
+* [x] 2017 SHA Vod kanockers
+* [x] 2017 SHA Malware Testrun
 
 ## Reversing
 * [x] 2017 BugsBunny Rev50
@@ -51,3 +59,4 @@
 * [x] 2017 BugsBunny Rev150
 * [x] 2017 BugsBunny Rev400
 * [x] 2017 BugsBunny Rev75
+* [x] 2017 SHA asby
