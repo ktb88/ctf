@@ -1,8 +1,22 @@
+# 2017 SHA - [FORENSIC] Wanna Fly
+
+## Key words
+
+- mount image
+- ransomeware
+- predict random seed
+
+## Solution
+
+문제에 ext4 파일 시스템 이미지 파일이 제공됩니다.
+
+먼저 이를 마운트 시켜서 폴더 내용을 조사해 봅니다.
 
 ```
 $ sudo mount -o loop kimberly.img ./mounted
 ```
 
+별 다른 내용은 없고 `Pictures` 폴더에 블러 효과가 입혀진 암호화된 파일들이 존재합니다.
 
 
 ```
