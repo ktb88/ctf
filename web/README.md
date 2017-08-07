@@ -38,3 +38,8 @@
   - Cloud Web Service
   - AWS S3 bucket
   - robots.txt
+* [x] 2017 SHA Bon Appetit
+  - https://github.com/ktb88/ctf/tree/master/web/0009_2017_SHA_BonAppetit
+  - LFI
+  - PHP wrapper
+  - .htaccess
