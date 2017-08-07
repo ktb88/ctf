@@ -13,6 +13,7 @@
 * [x] 2017 BugsBunny BabyRSA
 * [x] 2017 BugsBunny RSA2
 * [x] 2017 SHA Stack Overflow
+* [x] 2017 SHA Secure Login
 
 ## Pwnable
 * [ ] 2017 Meepwn anotherarena

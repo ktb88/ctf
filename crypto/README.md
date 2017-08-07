@@ -33,3 +33,6 @@
 * [x] 2017 SHA Stack Overflow
   - AES-CTR
   - Python Lambda as counter
+* [x] 2017 SHA Secure Login
+  - RSA
+  - no padding
