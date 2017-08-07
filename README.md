@@ -48,7 +48,7 @@
 ## Forensic
 * [x] 2017 h3x0r Android Forensic
 * [x] 2017 SHA Compromised?
-* [ ] 2017 SHA Wanna Fly
+* [x] 2017 SHA Wanna Fly
 
 ## Network
 * [x] 2017 SHA Vod kanockers
