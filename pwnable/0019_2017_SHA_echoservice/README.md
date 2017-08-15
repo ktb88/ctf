@@ -524,7 +524,7 @@ payload += p64(0)                             # *[rdx+8] point here for cond_2
 | (TRUE) r9 < r8 : cond_4
 |
 |   mov     rax, [rdi+8]
-|	  mov     rax, [rax]
+|   mov     rax, [rax]
 |   jmp     10E2B
 |
 \-->### 10F14
@@ -559,21 +559,21 @@ payload += p64(0)                             # *[rdx+8] point here for cond_2
 
 ```
 \-->### 10F14
-	  mov     r9, [rdi] 	  	; r9 = [rdi]
-	  mov     r10d, edx 	  	; r10d = edx
-	  mov     r9, [r9+r10*8] 	; r9 = r9[r10]  ; r10 = 0
-	  mov     rax, [r9+rax*8] ; rax = r9[rax] ; rax = 2
-	  jmp     10E2B
+    mov     r9, [rdi] 	  	; r9 = [rdi]
+    mov     r10d, edx 	  	; r10d = edx
+    mov     r9, [r9+r10*8] 	; r9 = r9[r10]  ; r10 = 0
+    mov     rax, [r9+rax*8] ; rax = r9[rax] ; rax = 2
+    jmp     10E2B
 
-	  ### 10E2B:
-	  test    rax, rax
+    ### 10E2B:
+    test    rax, rax
 /---jz      10F90 (FALSE)
 |
 | (FALSE) rax == 0
 |
 \-->mov     rd, r14 ; 10E34
-  	mov     rdi, rbx
-  	call    rax ; [*] That's what I want
+    mov     rdi, rbx
+    call    rax ; [*] That's what I want
 ```
 
 `call rax`를 해야 하기 때문에 뒤쪽에 있는 `test rax, rax (False)`는 의미가 없습니다. (RAX는 원샷 가젯 주소를 가지고 있기 때문에)
