@@ -63,6 +63,7 @@
 * [x] 2017 BugsBunny Rev400
 * [x] 2017 BugsBunny Rev75
 * [x] 2017 SHA asby
+* [x] 2017 SHA Suspect File 1
 
 ## CTF_TIPS
 - [PWN] 로컬에서 리모트 환경 처럼 설정하기 (xinetd)
