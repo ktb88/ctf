@@ -34,6 +34,7 @@
 * [X] 2017 bugsbunny Pwn250
 * [ ] 2017 bugsbunny Pwn300
 * [x] 2017 SHA Megan-35
+* [x] 2017 SHA Echo Service
 
 ## Web
 * [x] 2017 h3x0r misulgwan

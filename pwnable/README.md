@@ -60,3 +60,8 @@
   - Megan-35 encoder
   - FSB
   - one-shot gadget in 32bit libc
+* [x] 2017 SHA Echo Service
+  - amd64 | FULL RELRO | NX | SSP | PIE
+  - Object-c
+  - FSB (but Object-c version)
+  - construct fake frame

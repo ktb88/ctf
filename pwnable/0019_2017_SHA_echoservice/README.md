@@ -1,10 +1,11 @@
-# 2017 SHA - echoservice
+# 2017 SHA - Echo Service
 
 ## Key words
 
 - amd64 | FULL RELRO | NX | SSP | PIE
 - Object-c
 - FSB (but Object-c version)
+- construct fake frame
 
 ## Check Security
 
