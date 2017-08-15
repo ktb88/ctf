@@ -1,4 +1,4 @@
-# 2017 SHA - [REV] suspectfile1
+# 2017 SHA - [REV] Suspect File 1
 
 ## Key words
 
