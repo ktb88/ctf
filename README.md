@@ -35,6 +35,8 @@
 * [ ] 2017 bugsbunny Pwn300
 * [x] 2017 SHA Megan-35
 * [x] 2017 SHA Echo Service
+* [x] 2015 32C3 teufel
+* [x] 2015 MMA RPS  
 
 ## Web
 * [x] 2017 h3x0r misulgwan
