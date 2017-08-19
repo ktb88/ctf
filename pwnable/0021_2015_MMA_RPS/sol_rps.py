@@ -24,5 +24,3 @@ for i in xrange(50):
 	p.sendline(ans)
 	print p.recv()
 
-print p.recv()
-
