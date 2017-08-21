@@ -1,7 +1,7 @@
 # CTF activities @hackability
 
-2017 SHA CTF 85th place
-2017 Samsung CTF Final Round
+2017 SHA CTF 85th place  
+2017 Samsung CTF Final Round  
 
 ## Crypto
 * [x] 2017 AlexCTF Ultracoded
