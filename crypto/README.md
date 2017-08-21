@@ -36,3 +36,8 @@
 * [x] 2017 SHA Secure Login
   - RSA
   - no padding
+* [x] 2017 AlexCTF CR3
+  - Simple RSA Decryption
+* [x] 2017 AlexCTF CR4
+  - small primes
+

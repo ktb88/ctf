@@ -1,6 +1,7 @@
-# CTF activities by @hackability
+# CTF activities @hackability
 
-:P
+2017 SHA CTF 85th place
+2017 Samsung CTF Final Round
 
 ## Crypto
 * [x] 2017 AlexCTF Ultracoded
@@ -14,6 +15,8 @@
 * [x] 2017 BugsBunny RSA2
 * [x] 2017 SHA Stack Overflow
 * [x] 2017 SHA Secure Login
+* [x] 2017 AlexCTF CR3
+* [x] 2017 AlexCTF CR4
 
 ## Pwnable
 * [ ] 2017 Meepwn anotherarena
