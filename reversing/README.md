@@ -19,3 +19,6 @@
 * [x] 2017 SHA Suspect File 1
   - ELF reversing
   - bunch of instructions
+* [x] 2017 AlexCTF re2-cpp-is-awesome
+  - cpp ELF reversing
+  - custom python gdb plugin
