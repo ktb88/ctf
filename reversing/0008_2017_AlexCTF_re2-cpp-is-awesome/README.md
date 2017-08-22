@@ -36,7 +36,7 @@ IDA에서 제공해주는 `CFG`를 이용하여 분석해본 결과 다음 위�
 
 ## Solution Code 
 
-```
+```python
 from pwn import *
 from hackability_gdb import Gdb as hgdb
 
