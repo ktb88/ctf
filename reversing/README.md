@@ -22,3 +22,5 @@
 * [x] 2017 AlexCTF re2-cpp-is-awesome
   - cpp ELF reversing
   - custom python gdb plugin
+* [x] 2017 Inc0gnito leon
+  - anti reversing (ptrace)

@@ -40,4 +40,6 @@
   - Simple RSA Decryption
 * [x] 2017 AlexCTF CR4
   - small primes
-
+* [x] 2017 Inc0gnito des-ofb
+  - DES-OFB
+  - Predict key, iv

@@ -43,3 +43,9 @@
   - LFI
   - PHP wrapper
   - .htaccess
+* [x] 2017 Inc0gnito sophie
+  - php wrapper filtering
+  - error based blind injection
+  - key word filtering
+* [x] 2017 Inc0gnito corneria
+  - php reversing
