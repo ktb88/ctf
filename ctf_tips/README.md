@@ -1,5 +1,10 @@
 # CTF TIPS
 
+## Python
+
+* [x] requests
+* [x] PIL (known as Pillow) 
+
 ## Pwnable
 
 ### 로컬에서 리모트 환경 처럼 설정하기 (xinetd)
