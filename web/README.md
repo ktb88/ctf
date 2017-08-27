@@ -52,3 +52,8 @@
 * [x] 2017 HackCon Magic
   - Cookie header
   - Brain Fuck Language
+* [x] 2017 HackCon Dictator
+  - X-Forwarded-For
+  - Guessing (Recon)
+
+

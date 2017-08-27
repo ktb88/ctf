@@ -1,8 +1,11 @@
 # CTF activities @hackability
 
-2017 SHA CTF 85th place  
-2017 Samsung CTF Final Round  
+2017 HackCon CTF 45th place
 2017 Inc0gnito 8th
+2017 Samsung CTF Final Round  
+2017 SHA CTF 85th place
+2017 Defcon Final Round
+2017 Defcon Prequal Round 9th place (RRR)
 
 ## Crypto
 * [x] 2017 AlexCTF Ultracoded
@@ -57,6 +60,7 @@
 * [x] 2017 Inc0gnito sophie 
 * [x] 2017 Inc0gnito corneria
 * [x] 2017 HackCon Magic
+* [x] 2017 HackCon Dictator
 
 ## Forensic
 * [x] 2017 h3x0r Android Forensic
