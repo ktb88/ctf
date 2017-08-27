@@ -43,3 +43,6 @@
 * [x] 2017 Inc0gnito des-ofb
   - DES-OFB
   - Predict key, iv
+* [x] 2017 HackCon VizHash
+  - Reversing encrypt algorithm
+  - Bruteforcing

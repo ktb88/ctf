@@ -19,6 +19,7 @@
 * [x] 2017 AlexCTF CR3
 * [x] 2017 AlexCTF CR4
 * [x] 2017 Inc0gnito des-ofb
+* [x] 2017 HackCon VizHash
 
 ## Pwnable
 * [ ] 2017 Meepwn anotherarena
