@@ -49,3 +49,6 @@
   - key word filtering
 * [x] 2017 Inc0gnito corneria
   - php reversing
+* [x] 2017 HackCon Magic
+  - Cookie header
+  - Brain Fuck Language

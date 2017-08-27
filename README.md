@@ -56,6 +56,7 @@
 * [x] 2017 SHA Bon Appetit
 * [x] 2017 Inc0gnito sophie 
 * [x] 2017 Inc0gnito corneria
+* [x] 2017 HackCon Magic
 
 ## Forensic
 * [x] 2017 h3x0r Android Forensic
