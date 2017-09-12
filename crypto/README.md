@@ -46,3 +46,7 @@
 * [x] 2017 HackCon VizHash
   - Reversing encrypt algorithm
   - Bruteforcing
+* [x] 2017 TWCTF My Simple Cipher
+  - Reversing encrypt algorithm
+  - Xor Operation
+  - Bruteforcing
