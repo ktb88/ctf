@@ -1,0 +1,18 @@
+# README
+
+1. 업로드 주의사항
+.git 디렉터리도 전부 업로드해야 합니다.
+
+2. 정보 변경
+/octocat/admin/config.php 에 flag가 기록되어 있으며 이 부분은 변경이 필요합니다.
+
+$flag = md5("Git_4nd_SQL_4dmin"); 부분을 아래와 같이 변경
+$flag = md5("9it_0r_5QL_4dm1n");
+
+3. 디비 설정
+/octocat/admin/config.php 에 데이터베이스 계정, DB명 변경이 필요합니다.
+DB 내용은 octocat.sql에 있습니다.
+매우 간단합니다!
+
+4. flag
+Flag is TDCTF{67f34a24ecf1426778f718de38d87faa}

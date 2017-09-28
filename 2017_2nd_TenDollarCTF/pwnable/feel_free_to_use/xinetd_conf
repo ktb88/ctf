@@ -1,0 +1,12 @@
+service free
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = free
+    bind        = 0.0.0.0
+    server      = /home/free/free
+    type        = UNLISTED
+    port        = 20300
+}

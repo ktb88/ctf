@@ -1,0 +1,6 @@
+$ (echo "1e6598b803eaed34e8d1fd04b583e02912bc1de5cff60843a626efabd9e9a0cc8328eac89912e6ffa3e88d82bea2d9728328eac89912e6ffa3e88d82bea2d972"; cat -) | nc IP port
+
+hash("D", "1000", "1", "1")
+
+level 1 goal = (1,1)
+level up = 1000 + 1 = 1001 = congratz!

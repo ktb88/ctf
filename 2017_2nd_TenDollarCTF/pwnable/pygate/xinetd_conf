@@ -1,0 +1,13 @@
+service pygate
+{
+    disable     = no
+    flags       = REUSE
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = pygate
+    bind        = 0.0.0.0
+    server      = /home/pygate/challenge.py
+    type        = UNLISTED
+    port        = 20000
+}

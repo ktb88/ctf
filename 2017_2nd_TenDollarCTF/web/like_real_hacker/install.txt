@@ -1,0 +1,6 @@
+sudo apt-get install openjdk-7-jre
+sudo apt-get install default-jdk
+sudo apt-get install tomcat7
+sudo cp ctfquiz1.war /var/lib/tomcat7/webapps/ctfquiz1.war
+sudo sed -i 's/Connector port=\"8080/Connector port=\"9100/g' /var/lib/tomcat7/conf/server.xml
+sudo service tomcat7 restart

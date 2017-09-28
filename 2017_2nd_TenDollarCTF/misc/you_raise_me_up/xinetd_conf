@@ -1,0 +1,13 @@
+service raise
+{
+    disable     = no
+    flags       = REUSE
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = raise
+    bind        = 0.0.0.0
+    server      = /home/raise/challenge.py
+    type        = UNLISTED
+    port        = 20090
+}

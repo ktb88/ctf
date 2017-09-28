@@ -1,0 +1,12 @@
+service login
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = login
+    bind        = 0.0.0.0
+    server      = /home/login/Login_366c1ad3cc6031e1eb5d1374f003b2b0
+    type        = UNLISTED
+    port        = 20200
+}
