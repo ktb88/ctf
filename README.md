@@ -26,6 +26,7 @@
 * [x] 2017 Inc0gnito des-ofb
 * [x] 2017 HackCon VizHash
 * [x] 2017 TWCTF My Simple Cipher
+* [x] 2017 DCTF Forgot my key
 
 ## Pwnable
 * [ ] 2017 Meepwn anotherarena

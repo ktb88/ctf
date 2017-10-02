@@ -50,3 +50,6 @@
   - Reversing encrypt algorithm
   - Xor Operation
   - Bruteforcing
+* [x] 2017 DCTF Forgot my key
+  - Reversing simple encrypt logic (+, %)
+  - z3 solver
