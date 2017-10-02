@@ -56,16 +56,20 @@ my_encrypt 로직을 보면 다음 암호 값이 이전 암호 값에 연산되�
 
 먼저, for 문에서 키를 만낫을때 키의 인덱스는 첫 바이트를 제외하고 마지막 md5 키값 전 이기 때문에 python 코드로 생각을 해보면 다음과 같습니다.
 
+```python
 enc = chr(0x6d)
 for i in range(0, len(message)):
     enc += chr( ord(message[i]) + ord(key[i % len(key)]) + ord(enc[i]) % 126 )
+```
 
 이 때 i 값이 72 라면 메세지의 위치는 키 값이 md5 된 값을 만나게 됩니다.
 
 i % len(key) = 71 % 32 = 7 이 나오게 되기 때문에 i 가 71 때 다음과 같이 됨을 알 수 있습니다.
 
+```
 enc[72] = chr( (ord(message[71]) + ord(key[7]) + ord(enc[71])) % 126 )
 -> 08 = (ord(key[0]) + ord(key[7]) + 0x6d) % 126
+```
 
 이를 식으로 만들면 다음과 같습니다.
 
