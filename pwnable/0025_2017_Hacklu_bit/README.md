@@ -2,13 +2,15 @@
 
 ## Key words
 
--
+- x86_64 ELF
+- mprotect
+- call table
 
 ## Solution
 
 문제 내용은 다음과 같습니다
 
-```
+```c
 signed __int64 __fastcall main(__int64 a1, char **a2, char **a3)
 {
   signed __int64 result; // rax@2

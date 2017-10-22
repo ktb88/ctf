@@ -81,3 +81,7 @@
   - 64bit ELF
   - integer overflow
   - format string
+* [x] 2017 hack.lu - bit
+  - x86_64 ELF
+  - mprotect
+  - call table
