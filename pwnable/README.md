@@ -88,3 +88,7 @@
 * [x] 2017 hack.lu - exam
   - x86_64 ELF
   - House of Einherjar
+* [x] 2017 hack.lu - HeapHeaven
+  - x86_64 ELF
+  - leak using FD in heap
+  - overwrite malloc hook
