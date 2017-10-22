@@ -54,6 +54,7 @@
 * [x] 2017 Asis Mrs. Hudson
 * [x] 2017 Asis Greg Lestrade
 * [x] 2017 hack.lu - bit
+* [x] 2017 hack.lu - exam
 
 ## Web
 * [x] 2017 h3x0r misulgwan

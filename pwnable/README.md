@@ -85,3 +85,6 @@
   - x86_64 ELF
   - mprotect
   - call table
+* [x] 2017 hack.lu - exam
+  - x86_64 ELF
+  - House of Einherjar
