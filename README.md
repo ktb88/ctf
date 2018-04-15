@@ -4,7 +4,7 @@
 * [x] 2017 TWCTF 285th place
 * [x] 2017 HackCon CTF 45th place
 * [x] 2017 Inc0gnito 8th
-* [x] 2017 Samsung CTF Final Round 
+* [x] 2017 Samsung CTF Final Round
 * [x] 2017 SHA CTF 85th place
 * [x] 2017 Defcon Final Round (RRR)
 * [x] 2017 Defcon Prequal Round 9th place (RRR)
@@ -27,6 +27,7 @@
 * [x] 2017 HackCon VizHash
 * [x] 2017 TWCTF My Simple Cipher
 * [x] 2017 DCTF Forgot my key
+* [x] 2018 HITB - easy pub
 
 ## Pwnable
 * [ ] 2017 Meepwn anotherarena

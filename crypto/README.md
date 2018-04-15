@@ -1,12 +1,10 @@
 # Crypto Challenges
 
 * [x] 2017 AlexCTF Ultracoded
-  - https://github.com/ktb88/ctf/tree/master/crypto/0001_2017_AlexCTF_Ultracoded
   - hexlify binary string
   - base64 decode
   - morse decode
 * [x] 2017 AlexCTF ManyTimeSecrets
-  - https://github.com/ktb88/ctf/tree/master/crypto/0002_2017_AlexCTF_ManyTimeSecrets
   - One-time pad vulnerability
   - crib dragging attack
   - guessing words
@@ -53,3 +51,6 @@
 * [x] 2017 DCTF Forgot my key
   - Reversing simple encrypt logic (+, %)
   - z3 solver
+* [x] 2018 HITB - easy pub
+  - strlen does count `\x00`
+  - size doesn't count `\x00`
